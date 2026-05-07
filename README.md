@@ -17,8 +17,8 @@ The robot follows the computed waypoints in real time by publishing velocity com
 
 | Topic | Type | Description |
 |-------|------|-------------|
-| `/odom` | `nav_msgs/Odometry` | Subscribes — reads robot pose from Gazebo |
-| `/cmd_vel` | `geometry_msgs/Twist` | Publishes — sends movement commands |
+| `/odom` | `nav_msgs/Odometry` | Subscribes, reads robot pose from Gazebo |
+| `/cmd_vel` | `geometry_msgs/Twist` | Publishes, sends movement commands |
 
 ---
 
@@ -26,9 +26,9 @@ The robot follows the computed waypoints in real time by publishing velocity com
 
 The `scout-laser.urdf.xacro` defines a differential drive robot with:
 
-- **360° Laser Scanner** — 10Hz, range 0.2m–10m
-- **Differential Drive** — left & right wheel joints
-- **Caster Wheel** — for stability
+- **360 degree Laser Scanner** - 10Hz, range 0.2m to 10m
+- **Differential Drive** - left and right wheel joints
+- **Caster Wheel** - for stability
 
 ---
 
@@ -46,7 +46,7 @@ The OpenCV RRT window displays:
 
 ---
 
-## Setup & Usage
+## Setup and Usage
 
 ### Prerequisites
 
@@ -60,7 +60,6 @@ The OpenCV RRT window displays:
 Before running, update the hardcoded paths in `t3.py` to match your workspace:
 
 ```python
-# In t3.py — update this line:
 self.maze = self.loading_maze_visualization('/home/common/Downloads/40px_new.png', dilation)
 ```
 
